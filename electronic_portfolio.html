@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <style>
-      * {
+<head>
+<style>
+     * {
         box-sizing: border-box;
         font-family: sans-serif;
       }
@@ -12,81 +11,45 @@
       .footer {
         background-color: black;
         color: white;
-        padding: 8px;
+        padding: 1px;
       }
-      
-      .column {
-        float: left;
-        padding: 8px;
-      }
-      
-      .column img{
-        float: right;
-      }
-      
-      .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-      
-      .menu {
-        width: 25%;
-      }
-      
-      .content {
-        width: 75%;
-      }
-      
-      .menu ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      
-      .menu li {
-        padding: 8px;
-        margin-bottom: 8px;
-        background-color: teal;
-        color: #ffffff
-      }
-      
-      .menu li:hover {
-        background-color: #0099cc;
-      }
-      
-    </style>
-  </head>
-  
-  <body>
-  
-    <div class="header">
-      <h1><center>Electronic Portfolio</center></h1>
-    </div>
-    
-    <div class="clearfix">
-      <div class="column menu">
-       <ul>
-        <li><a href="https://aarshv30.github.io/main_page.html">Main
-        Page</a></li>
-                  <li><a href="https://aarshv30.github.io/contact_information.html">Contact Information</a></li>
-                   <li><a
-        href="">Portfolio</a></li></ul>
-   </div>
-   
-   <div class="column content">
-     <img
-  src="https://www.surreyschools.ca/schools/envercreek/Style%20Library/Images/114.jpg">
-                 <h1>Welcome</h1>
-                 <p>Electronic Portfolio</p>
-                 <p>This Portfolio will include a Main Page, Contact Information, and my Portfolio</p>
-                    </div>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+</head>
+<body>
+<div class="footer">
+                    <h1><center>Electronic Portfolio</center></h1>
                   </div>
-                  
-                  <div class="footer">
-                    <p><center>Contact information</center></p>
-                  </div>
-                  
-                </body>
-                
-              </html>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Work & Volunteer Experience</a></li>
+  <li><a href="#contact">Contact Information</a></li>
+  <li><a href="#about">Academic History</a></li>
+  <li><a href="#about">Accomplishments</a></li>
+</ul>
+<center><img src="https://www.resolutets.com/wp-content/uploads/2013/06/ThinkstockPhotos-502382249.jpg"alt="Mountain View" width="500" height="377"></center>
+
+</body>
+</html>
