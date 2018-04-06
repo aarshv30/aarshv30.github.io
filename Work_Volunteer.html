@@ -1,7 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--CSS styling will give the table a border and a size. Make sure you include these styles otherwise your table won't make a lot of sense-->
+   <!DOCTYPE html>
+<html>
+<head>
+<style>
+     * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      
+      .header,
+      .footer {
+        background-color: black;
+        color: white;
+        padding: 1px;
+      }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+</style>
+</head>
+<body>
+<div class="footer">
+                    <h1><center>Electronic Portfolio</center></h1>
+                  </div>
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="Work_Volunteer.html">Work & Volunteer Experience</a></li>
+  <li><a href="contact_information.html">Contact Information</a></li>
+  <li><a href="about">Academic History</a></li>
+  <li><a href="about">Accomplishments</a></li>
+</ul>
+<h1><center>Work & Volunteer Experience</center></h1>
+<h4><center>Enjoy a list of James Johnson's work locations and dates. </center></h4>
+<center><img src="https://www.cambridge.ca/en/your-city/resources/Volunteer_1600x494.jpg"alt="Portfolio" width="550" height="400"></center>
     <style>
       table {
         width: 75%;
@@ -12,29 +62,28 @@
     </style>
   </head>
   <body>
-    <!--Pay special attention to how the table looks. Each table row starts with the left column.-->
     <table>
-      <!--Opens the table-->
       <tr>
-        <!--Begins a table row-->
-        <th>Locations:</th>
-        <!--Table header. This will be bold and centered, only use it on the top row-->
-        <th>Start Date:</th>
-        <th>End Date:</th>
-      </tr>
-      <!--Ends the table row-->
-      <tr>
-        <!--Begins another table row. This will be directly below the table header-->
-        <td>Burger King</td>
-        <!--Table data. This is bascially a "cell" in a table-->
-        <td>15/01/2016</td>
-        <td>Center Right</td>
+        <center><th><center>Locations:</center></th></center>
+        <center><th><center>Start Date:</center></th></center>
+        <center><th><center>End Date:</center></th></center>
       </tr>
       <tr>
-        <td>KFC</td>
-        <td></td>
-        <td>Bottom Right</td>
+        <center><td><center>Burger King</center></td></center>
+        <center><td><center>15/01/2016</center></td></center>
+        <center><td><center>30/04/2016</center></td></center>
       </tr>
+      <tr>
+        <center><td><center>KFC</center></td></center>
+        <center><td><center>1/05/2016</center></td></center>
+        <center><td><center>16/08/2016</center></td></center>
+      </tr>
+        <center><td><center>McDonalds</center></td></center>
+        <center><td><center>20/08/2016</center></td></center>
+        <center><td><center>20/12/2016</center></td></center>
     </table>
   </body>
+
+
+</body>
 </html>
