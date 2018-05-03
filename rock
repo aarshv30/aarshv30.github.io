@@ -1,0 +1,80 @@
+<script>
+  function getUserChoice() {
+    var userInput = prompt("Do you choose rock, paper, scissors, lizard, or spock?");
+    userInput = userInput.toLowerCase();
+    if (userInput === "rock" || userInput === "paper" || userInput === "scissors" || userInput === "bomb" || userInput === "lizard" || userInput === "spock") {
+      return userInput;
+    } else {
+      document.write("Error, not acceptable input!");
+    }
+  }
+ 
+  function getComputerChoice() {
+    var randomNumber = Math.floor(Math.random() * 3);
+    switch (randomNumber) {
+      case 0:
+        return "rock";
+      case 1:
+        return "paper";
+      default:
+        return "scissors";
+    }
+  }
+ 
+  function determineWinner(userChoice, computerChoice) {
+    if (userChoice === computerChoice) {
+      return "The game is a tie!";
+    }
+    if (userChoice === "rock") {
+      if (computerChoice === "paper" || computerChoice === "spock") {
+        return "The computer won!";
+      } else {
+        return "You won!";
+      }
+    }
+    if (userChoice === 'paper') {
+      if (computerChoice === 'scissors' || computerChoice === "lizard") {
+        return 'The computer won!';
+      } else {
+        return 'You won!';
+      }
+    }
+    if (userChoice === 'scissors') {
+      if (computerChoice === 'rock' || computerChoice === "spock") {
+        return 'The computer won!';
+      } else {
+        return 'You won!';
+      }
+    }
+     if (userChoice === 'spock') {
+      if (computerChoice === 'paper' || computerChoice === "lizard") {
+        return 'The computer won!';
+      } else {
+        return 'You won!';
+      }
+    }
+     if (userChoice === 'lizard') {
+      if (computerChoice === 'rock' || computerChoice === "lizard") {
+        return 'The computer won!';
+      } else {
+        return 'You won!';
+      }
+    }
+    if (userChoice === 'bomb') {
+      return 'BOMB! SECRET WIN!';
+    }
+  }
+ 
+  function playGame() {
+    var userChoice = getUserChoice();
+    var computerChoice = getComputerChoice();
+    document.write("User choice: " + userChoice);
+    document.write("<br>");
+    document.write("Computer's choice: " + computerChoice);
+    document.write("<br>");
+    document.write("The result: " + determineWinner(userChoice, computerChoice));
+  }
+ 
+  playGame();
+ 
+</script>
