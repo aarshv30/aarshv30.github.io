@@ -2,53 +2,65 @@
 <html>
 <head>
 <style>
-     * {
-        box-sizing: border-box;
-        font-family: sans-serif;
+      body {
+        margin: 0;
       }
-      
-      .header,
-      .footer {
-        background-color: black;
+      ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      ul.topnav li {
+        float: left;
+      }
+      ul.topnav li a {
+        display: block;
         color: white;
-        padding: 1px;
+        text-align: center;
+        padding: 8px 110px;
+        text-decoration: none;
       }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-</style>
-</head>
-<body>
-<div class="footer">
-                    <h1><center>Electronic Portfolio</center></h1>
-                  </div>
-<ul>
-  <li><a href=electronic_portfolio.html</a></li>
-  <li><a href=Academic_History.html</a></li>
-  <li><a href=Accomplishments.html</a></li>
-  <li><a href=Work_Volunteer.html</a></li>
-  <li><a href=contact_information.html</a></li>
-</ul>
+      ul.topnav li a:hover:not(.active) {
+        background-color: #111;
+      }
+      ul.topnav li a.active {
+        background-color: #4CAF50;
+      }
+      ul.topnav li.right {
+        float: right;
+      }
+      @media screen and (max-width: 600px) {
+        ul.topnav li.right,
+        ul.topnav li {
+          float: none;
+        }
+      }
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+      }
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <big><b><center><h1>Portfolio</h1></center><b></big>
+    <ul class="topnav">
+      <li><a class="active" href="https://lobsangdhonden5.github.io/electronic_portfolio.html">Contact Information</a></li>
+      <li><a href="https://lobsangdhonden5.github.io/academic_history.html">Academic History</a></li>
+      <li><a href="https://lobsangdhonden5.github.io/work_and_volunteer_experience.html">Work & Volunteer Exp.</a></li>
+      <li class="right"><a href="https://lobsangdhonden5.github.io/accomplishments.html">Accomplishments</a></li>
+    </ul>
 <h1><center>Home Page</center></h1>
 <h4><center>Welcome to the Portfolio of James Johnson. Here you can access his Contact Information, Academic History, Accomplishments, and his Work & Volunteer Experience.</center></h4>
 <center><img src="https://www.resolutets.com/wp-content/uploads/2013/06/ThinkstockPhotos-502382249.jpg"alt="Portfolio" width="550" height="400"></center>
